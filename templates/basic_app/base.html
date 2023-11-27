@@ -1,0 +1,48 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/2hco4zdbr24744fjnzwvpdeos">
+        <link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script>
+              function getDfd() {let yFn,nFn;const p=new Promise(function(y, n){yFn=y;nFn=n;});p.resolve=yFn;p.reject=nFn;return p;}
+              window.lazyloader = getDfd();
+              window.tracking = getDfd();
+              window.impressionTracking = getDfd();
+              window.ingraphTracking = getDfd();
+              window.appDetection = getDfd();
+              window.pemTracking = getDfd();
+            </script>
+    </head>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                       
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" href="{% url 'index' %}">
+                        <img src="https://flashbox.co/wp-content/uploads/2022/04/Nasrin-karimi.png" alt="Logo" style="width:48px;"></a></li>
+                    <li><h2><a class="nav-link" href="{% url 'nasrin:education' %}">Education</a></h2></li>
+                    <li><h2><a class="nav-link" href="{% url 'nasrin:experience' %}">Experience</a></h2></li>
+                    <li><h2><a class="nav-link" href="{% url 'nasrin:media' %}">Media</a></h2></li>
+
+                </ul>
+            
+            </div>
+        </nav>
+        <div class="container">
+
+            {% block body_block %}
+            
+            
+            
+            {% endblock %}
+
+
+        </div>
+    </body>
+</html>
+
+
+
